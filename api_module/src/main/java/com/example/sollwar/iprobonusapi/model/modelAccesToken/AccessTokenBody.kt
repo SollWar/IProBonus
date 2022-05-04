@@ -1,6 +1,6 @@
 package com.example.sollwar.iprobonusapi.model.modelAccesToken
 
-data class AccessTokenBody(
+internal data class AccessTokenBody(
     var accessToken: String = "",
     var idClient: String = "",
     var latitude: Int = 0,

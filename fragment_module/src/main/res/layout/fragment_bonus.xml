@@ -3,7 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="20dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     tools:context=".BonusFragment">
@@ -11,8 +10,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bonus_view"
         android:visibility="invisible"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="335dp"
+        android:layout_height="105dp">
 
         <TextView
             android:id="@+id/bonus_count"

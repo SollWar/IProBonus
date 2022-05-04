@@ -1,13 +1,13 @@
 package com.example.sollwar.iprobonusapi
 
-class Bonus(
+class UserBonus(
     private val idClient: String,
     private val idDevice: String
 ) {
     private val accessKey = "891cf53c-01fc-4d74-a14c-592668b7a03c"
     private var accessToken = "null"
     var accessTokenAvailable = false
-    private var iProBonusRepository: IProBonusRepository = IProBonusRepository()
+    private var iProBonusRepository = IProBonusRepository.getInstance()
 
     suspend fun refreshToken(): Boolean {
         iProBonusRepository = IProBonusRepository()
@@ -23,7 +23,7 @@ class Bonus(
         }
     }
 
-    suspend fun getUserBonus(): UserBonus? {
+    suspend fun getUserBonus(): UserBonusData? {
         iProBonusRepository = IProBonusRepository()
         try {
             val bonusResult = iProBonusRepository.getBonusForToken(
@@ -31,7 +31,7 @@ class Bonus(
                 accessKey
             )
             return if (bonusResult != null) {
-                UserBonus(
+                UserBonusData(
                     bonusResult.data.currentQuantity,
                     bonusResult.data.dateBurning,
                     bonusResult.data.forBurningQuantity,
@@ -43,7 +43,7 @@ class Bonus(
         }
     }
 
-    data class UserBonus(
+    data class UserBonusData(
         val currentQuantity: Double,
         val dateBurning: String,
         val forBurningQuantity: Double,
@@ -51,12 +51,12 @@ class Bonus(
     )
 
     companion object {
-        private var bonus: Bonus? = null
-        fun getInstance(idClient: String, idDevice: String): Bonus {
-            return if (bonus == null) {
-                bonus = Bonus(idClient, idDevice)
-                bonus!!
-            } else bonus!!
+        private var userBonus: UserBonus? = null
+        fun getInstance(idClient: String, idDevice: String): UserBonus {
+            return if (userBonus == null) {
+                userBonus = UserBonus(idClient, idDevice)
+                userBonus!!
+            } else userBonus!!
         }
     }
 

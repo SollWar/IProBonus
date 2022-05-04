@@ -3,11 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Sollw/androidProject/IProBonus/app/src/main/res/drawable/ic_info.xml" value="0.277" />
+        <entry key="..\:/Users/Sollw/androidProject/IProBonus/app/src/main/res/drawable/ic_red.xml" value="0.277" />
         <entry key="..\:/Users/Sollw/androidProject/IProBonus/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Sollw/androidProject/IProBonus/app/src/main/res/menu/toolbar_menu.xml" value="0.278125" />
+        <entry key="..\:/Users/Sollw/androidProject/IProBonus/fragment_module/src/main/res/drawable/ic_arrow.xml" value="0.277" />
+        <entry key="..\:/Users/Sollw/androidProject/IProBonus/fragment_module/src/main/res/drawable/ic_fire.xml" value="0.277" />
         <entry key="..\:/Users/Sollw/androidProject/IProBonus/fragment_module/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Sollw/androidProject/IProBonus/fragment_module/src/main/res/layout/bonus_fragment.xml" value="0.75" />
         <entry key="..\:/Users/Sollw/androidProject/IProBonus/fragment_module/src/main/res/layout/colors.xml" value="0.25" />
-        <entry key="..\:/Users/Sollw/androidProject/IProBonus/fragment_module/src/main/res/layout/fragment_bonus.xml" value="0.67" />
+        <entry key="..\:/Users/Sollw/androidProject/IProBonus/fragment_module/src/main/res/layout/fragment_bonus.xml" value="0.5" />
       </map>
     </option>
   </component>
