@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IProBonus</string>
+    <string name="bonuses">%1$s bonuses</string>
+    <string name="date_burn">%1$s will burn</string>
+</resources>

@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Sollw/androidProject/IProBonus/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Sollw/androidProject/IProBonus/fragment_module/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Sollw/androidProject/IProBonus/fragment_module/src/main/res/layout/bonus_fragment.xml" value="0.75" />
+        <entry key="..\:/Users/Sollw/androidProject/IProBonus/fragment_module/src/main/res/layout/colors.xml" value="0.25" />
+        <entry key="..\:/Users/Sollw/androidProject/IProBonus/fragment_module/src/main/res/layout/fragment_bonus.xml" value="0.67" />
       </map>
     </option>
   </component>

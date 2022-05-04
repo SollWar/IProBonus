@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IProBonus</string>
+    <string name="bonuses">%1$s бонусов</string>
+    <string name="date_burn">%1$s сгорит</string>
+</resources>

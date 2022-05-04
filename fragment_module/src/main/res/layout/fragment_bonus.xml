@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="20dp"
@@ -7,36 +8,73 @@
     android:layout_height="wrap_content"
     tools:context=".BonusFragment">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bonus_view"
+        android:visibility="invisible"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/bonus_count"
-            android:text="Количество бонусов"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="@string/bonuses"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/data_fire"
-            android:text="Дата сгорания"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="18dp"
+            android:text="@string/date_burn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/bonus_count"
+            app:layout_constraintTop_toBottomOf="@+id/bonus_count" />
 
         <TextView
             android:id="@+id/bonus_fire"
-            android:text="Бонусов сгорит"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/bonuses"
+            app:layout_constraintBottom_toBottomOf="@+id/data_fire"
+            app:layout_constraintStart_toEndOf="@+id/fire"
+            app:layout_constraintTop_toTopOf="@+id/data_fire" />
+
+        <ImageView
+            android:id="@+id/fire"
+            android:layout_width="13dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_fire"
+            app:layout_constraintBottom_toBottomOf="@+id/data_fire"
+            app:layout_constraintStart_toEndOf="@+id/data_fire"
+            app:layout_constraintTop_toTopOf="@+id/data_fire" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/ic_arrow"
+            app:layout_constraintBottom_toBottomOf="@+id/bonus_fire"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bonus_fire"
+            app:layout_constraintTop_toTopOf="@+id/bonus_count" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/bonus_name"
-            android:text="Название бонусов"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
-
-</androidx.cardview.widget.CardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
